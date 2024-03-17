@@ -25,7 +25,7 @@ def get_rds_credentials(secret_name):
         print(f"Error fetching secret: {e}")
         return None
 
-def connect_and_create_db():
+def connect_and_create_db(event, context):
     connection = None
 
     try:
